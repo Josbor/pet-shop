@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { AppProps } from 'next/app';
 import '../styles.css';
 
+
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
     Router.events.on('routeChangeStart', () => {
@@ -22,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Plantilla Next.js | Avila Tek</title>
+        <title>Pet Shop | Avila Tek</title>
       </Head>
       <Component {...pageProps} />
     </>

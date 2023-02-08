@@ -1,0 +1,11 @@
+export { default as SearchIcon } from './SearchIcon';
+export { default as Paw } from './Paw';
+export { default as HomePawIcon } from './HomePawIcon';
+export { default as LocationIcon } from './LocationIcon';
+export { default as UserIcon } from './UserIcon';
+export { default as InstagramIcon } from './InstagramIcon';
+export { default as TwitterIcon } from './TwitterIcon';
+export { default as FacebookIcon } from './FacebookIcon';
+export { default as AvilaIcon } from './AvilaIcon';
+export { default as HousePetIcon } from './HousePetIcon';
+export { default as TreeIcon } from './TreeIcon';

@@ -3,9 +3,10 @@
 
 module.exports = {
   content: [
-    './pages/**/*.{js,jsx,ts,tsx}',
+    './pages/**/*.{html,js,jsx,ts,tsx}',
     './components/**/*.{js,jsx,ts,tsx}',
     './context/**/*.{js,jsx,ts,tsx}',
+    './node_modules/tw-elements/dist/js/**/*.js'
   ],
   darkMode: 'class',
   theme: {
@@ -39,5 +40,6 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/line-clamp'),
+    require('tw-elements/dist/plugin')
   ],
 };

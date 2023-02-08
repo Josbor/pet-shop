@@ -1,18 +1,25 @@
 import React from 'react';
-import Image from 'next/image';
-import logo from '../public/logo.png';
+import NavigationBar from './NavigationBar';
+import HeaderHouse from './HeaderHome';
+import { AvilaIcon } from '../components/icons';
+import FooterHome from './FooterHome';
+import HeaderBar from './HeaderBar';
+import HeaderTop from './HeaderTop';
+import Slider from './Slider';
+
 
 function HomePage() {
   return (
-    <div className=" w-screen ">
-      <header className="w-full  ">
-        <div className="w-full bg-red-600 h-5"></div>
-        <div>
-          <img src={logo} alt="" />
-        </div>
-        <div></div>
-      </header>
-    </div>
+    <>
+      <HeaderTop />
+      <HeaderHouse />
+      {/* navigation-bar */}
+      <NavigationBar />
+      <HeaderBar />
+
+      <Slider />
+      <FooterHome />
+    </>
   );
 }
 
