@@ -5,6 +5,7 @@ import slide2 from '../public/assets/slide2.png'
 import slide3 from '../public/assets/slide3.png'
 
 import { MinusIcon } from '../components/icons'
+import { useInterval } from '../hooks'
 
 const sliders = [
   {
@@ -24,7 +25,9 @@ const Slider = () => {
   const [a, seta] = useState(0)
   const [b, setB] = useState(1)
   const [currentSlide, setCurrentSlide] = useState(0)
-
+  useInterval(() => {
+    nextSlide()
+  }, 5000)
   const slideShow = useRef(null)
 
 
@@ -186,6 +189,7 @@ const Slider = () => {
         </button>
 
       </div>
+
 
 
     </>

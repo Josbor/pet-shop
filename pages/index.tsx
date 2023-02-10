@@ -13,6 +13,9 @@ import Image from 'next/image';
 import dogEating from '../public/assets/dog-eating.jpg'
 import foodDog from '../public/assets/dog-food.jpg'
 import doggy from '../public/assets/doggy.png'
+import mark from '../public/assets/mark.png'
+import { FacebookIcon, InstagramIcon, TwitterIcon } from '../components/icons';
+
 
 
 const services = [
@@ -34,7 +37,7 @@ function HomePage() {
       <HeaderBar />
       <Slider />
       <CategorySection />
-      <section id='productos-destacados'>
+      <section id='promocionespromociones'>
         <TittleFIeld tittle='productos destacados' />
         <ProductsSection />
       </section>
@@ -60,15 +63,15 @@ function HomePage() {
       </section>
 
       <section className='px-[7%]'>
-        <Image src={doggy} alt='' />
+        <Image className='w-full' src={doggy} alt='' />
       </section>
 
-      <section id='ultimos productos'>
+      <section id='ultimos-productos'>
         <TittleFIeld tittle='ultimos productos' />
         <ProductsSection inverte />
       </section>
 
-      <section>
+      <section id='nuestros-servicios'>
         <TittleFIeld tittle='nuestros servicios' />
         <p></p>
         <div className='w-full grid gap-y-5 lg:grid-cols-3 px-[7%] my-10' style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(18rem, 1fr))' }}>
@@ -77,6 +80,35 @@ function HomePage() {
               <Service key={useId()} tittle={s} />
             ))
           }
+        </div>
+      </section>
+
+      <section id='comprar-por-marca' className='w-full'>
+        <TittleFIeld tittle='trabajamos con las mejores marcas' />
+        <div className='   sm:grid  sm:grid-cols-[1.75fr,4fr] px-[7%]  my-5 sm:my-10'>
+          <div className='w-full'>
+            <p className='w-full text-[#333333] text-xs text-justify'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut viverra fames sed.
+            </p>
+          </div>
+          <div className=' w-full grid gap-y-8 grid-cols-2  md:grid-cols-3 lg:grid-cols-4 justify-items-center mt-10 sm:mt-0' >
+            <Image src={mark} alt='' />
+            <Image src={mark} alt='' />
+            <Image src={mark} alt='' />
+            <Image src={mark} alt='' />
+
+          </div>
+          <div className='flex gap-2'>
+            <a href="#">
+              <InstagramIcon />
+            </a>
+            <a href="#">
+              <TwitterIcon className='fill-white' />
+            </a>
+            <a href="#">
+              <FacebookIcon className='fill-white' />
+            </a>
+          </div>
         </div>
       </section>
 

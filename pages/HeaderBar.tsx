@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { Box, Drawer, IconButton, Toolbar, Typography } from '@mui/material';
+import { Box, Drawer, IconButton, Toolbar } from '@mui/material';
 import logo from '../public/assets/logo.svg'
 import Image from 'next/image';
 import { HomePawIcon, LocationIcon, UserIcon } from '../components/icons';
@@ -19,64 +19,12 @@ export default function HeaderBar() {
   }
 
 
-  // useEffect(() => {
-
-  //   const header = document.querySelector('#nav').getBoundingClientRect().y
-  //   const navs = document.querySelectorAll('.nav-tab')
-  //   const inicio = document.querySelector('#header').getBoundingClientRect().y
-  //   const about = document.querySelector('#tab-sobre-mi').getBoundingClientRect().y
-  //   const portfolio = document.querySelector('#tab-portafolio').getBoundingClientRect().y
-  //   const skills = document.querySelector('#tab-habilidades').getBoundingClientRect().y
-  //   const handleScroll = () => {
-  //     //position from each section
-
-
-  //     const removeClass = () => {
-  //       navs.forEach(n => {
-  //         n.classList.remove('nav--selected')
-  //       })
-  //     }
-  //     //position of the windows
-  //     const p = window.scrollY;
-
-
-  //     if (p > inicio) {
-
-  //       setHMenu(t('header.nav-home'))
-
-  //     }
-  //     if (p > (about * 0.9)) {
-
-  //       setHMenu(t('header.nav-about'))
-
-  //     }
-  //     if (p > (portfolio * 0.9)) {
-
-  //       setHMenu(t('header.nav-portfolio'))
-
-  //     }
-  //     if (p > (skills * 0.9)) {
-
-  //       setHMenu(t('header.nav-skills'))
-  //     }
-
-
-
-  //   }
-
-  //   window.addEventListener('scroll', handleScroll)
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll)
-
-  //   }
-  // }, [])
 
 
   return (
     <>
 
-      <AppBar className='block md:hidden' position="sticky" sx={{ background: '#FFFEFE ', color: '#68605B', top: '0' }}>
+      <AppBar className='block md:!hidden lg:!hidden' position="sticky" sx={{ background: '#FFFEFE ', color: '#68605B', top: '0' }}>
         <Toolbar>
           <IconButton
             size="large"

@@ -12,8 +12,8 @@ const CategorySection = () => {
     'placeholder'
   ]
   return (
-    <section className='mt-10'>
-      <TittleFIeld tittle='una gran variedad de categorias'/>
+    <section id='comprar-por-mascota' className='mt-10'>
+      <TittleFIeld tittle='una gran variedad de categorias' />
       <div className='grid grid-cols-2 min-[380px]:grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-1 justify-items-center px-2 mt-5'>
 
         {

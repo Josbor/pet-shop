@@ -2,15 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --font-style: Montserrat;
+  scroll-behavior: smooth !important;
 }
 
-.fontStyle1 {
-  font-family: 'Montserrat' !important;
-}
 /* purgecss start ignore */
 html,
 body {
