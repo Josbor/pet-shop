@@ -9,3 +9,5 @@ export { default as FacebookIcon } from './FacebookIcon';
 export { default as AvilaIcon } from './AvilaIcon';
 export { default as HousePetIcon } from './HousePetIcon';
 export { default as TreeIcon } from './TreeIcon';
+export { default as MinusIcon } from './MinusIcon';
+export { default as Paw2 } from './Paw2';

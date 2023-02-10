@@ -5,6 +5,7 @@ const MarketCarIcon = (props) => (
     width={19}
     height={16}
     fill="#333"
+    viewBox="0 0 19 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
